@@ -4,7 +4,7 @@ Build Docker Image
 ```
 $docker build --build-arg GIT_ACCESS_TOKEN=[insert-access-token-here] -t [image_name]:[image_tag] .
 ```
-Version 2.8.0:
+Choice Version:
 ```
 $docker build --build-arg GIT_ACCESS_TOKEN=[insert-access-token-here] -t rpack-atlas:v2.8.0 .
 $docker build --build-arg GIT_ACCESS_TOKEN=[insert-access-token-here] -t rpack-atlas:v2.12.0 .
