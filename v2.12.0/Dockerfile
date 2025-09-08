@@ -1,7 +1,7 @@
 # Rstudio 4.2.1 and Atlas 2.12.0 Version
 FROM rocker/rstudio:4.2.1
 
-LABEL authors="Jinwoo Yoon, Subin Kim"
+LABEL authors="Jinwoo Yoon, Subin Kim, Yiju Park"
 
 RUN apt-get update && \
     apt-get install -y default-jdk
