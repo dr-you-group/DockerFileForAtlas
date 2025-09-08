@@ -40,7 +40,6 @@ RUN R -e 'install.packages("renv")'
 # OHDSI Packages
 RUN R -e 'devtools::install_github("OHDSI/Andromeda",ref="v0.6.0")'
 RUN R -e 'devtools::install_github("OHDSI/CohortGenerator",ref="v0.4.0")'
-RUN R -e 'devtools::install_github("OHDSI/CohortMethod",ref="v4.2.2")'
 RUN R -e 'devtools::install_github("OHDSI/Cyclops",ref="v3.1.2")'
 RUN R -e 'devtools::install_github("OHDSI/DatabaseConnector",ref="v5.0.2")'
 RUN R -e 'devtools::install_github("OHDSI/EmpiricalCalibration",ref="v3.0.0")'
@@ -49,6 +48,7 @@ RUN R -e 'devtools::install_github("OHDSI/MethodEvaluation",ref="v2.2.0")'
 RUN R -e 'devtools::install_github("OHDSI/OhdsiSharing",ref="v0.2.2")'
 RUN R -e 'devtools::install_github("OHDSI/ParallelLogger",ref="v3.0.0")'
 RUN R -e 'devtools::install_github("OHDSI/SqlRender",ref="v1.8.3")'
+RUN R -e 'devtools::install_github("OHDSI/CohortMethod",ref="v4.2.2")'
 
 # Install JDBC driver
 RUN mkdir -p /home/rstudio/temp

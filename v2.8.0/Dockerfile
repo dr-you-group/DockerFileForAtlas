@@ -37,7 +37,6 @@ RUN R -e 'install.packages("shiny")'
 # OHDSI Packages
 RUN R -e "install.packages('devtools')"
 RUN R -e 'devtools::install_github("OHDSI/Andromeda",ref="v0.3.2")'
-RUN R -e 'devtools::install_github("OHDSI/CohortMethod",ref="v4.0.0")'
 RUN R -e 'devtools::install_github("OHDSI/Cyclops",ref="v3.0.0")'
 RUN R -e 'devtools::install_github("OHDSI/DatabaseConnector",ref="v3.0.0")'
 RUN R -e 'devtools::install_github("OHDSI/DatabaseConnectorJars",ref="v1.1.0")'
@@ -47,6 +46,7 @@ RUN R -e 'devtools::install_github("OHDSI/MethodEvaluation",ref="v2.0.0")'
 RUN R -e 'devtools::install_github("OHDSI/OhdsiSharing",ref="v0.2.2")'
 RUN R -e 'devtools::install_github("OHDSI/ParallelLogger",ref="v2.0.0")'
 RUN R -e 'devtools::install_github("OHDSI/SqlRender",ref="v1.6.8")'
+RUN R -e 'devtools::install_github("OHDSI/CohortMethod",ref="v4.0.0")'
 
 RUN mkdir -p /home/jdbc
 COPY ./jdbc /home/jdbc
